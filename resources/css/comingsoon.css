@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "letsGoDigital";
+    src: url("/assets/font/Lets-go-Digital-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+#loading {
+    background: radial-gradient(
+        203.68% 203.68% at 50% 171.35%,
+        #a0c1f2 0%,
+        #7dafea 27.04%,
+        #0444b3 63.83%,
+        #003796 76.2%,
+        #002668 83.88%
+    );
+}

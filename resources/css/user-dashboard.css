@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(
+        203.68% 203.68% at 50% 171.35%,
+        #a0c1f2 0%,
+        #7dafea 27.04%,
+        #0444b3 63.83%,
+        #003796 76.2%,
+        #002668 83.88%
+    );
+}
+
+:root {
+    --black: #383530;
+    --gray: #9d9d9d;
+    --lightgray: #e1e5e8;
+    --white: #fbfbfb;
+    --mainblue: #3171d3;
+    --mainblue_dark: #22539f;
+}
+
+p {
+    color: var(--black);
+    font-size: 20px;
+}
+
+.button {
+    background-size: 200%;
+    background-image: linear-gradient(to left, #18e6fe, #00a3ff, #18e6fe);
+    transition: 0.5s;
+    color: white;
+    text-align: center;
+    border-radius: 100px;
+}
+.button:hover {
+    background-position: right;
+}
+
+.button_alt {
+    border: 3px solid #00a3ff;
+    color: #00a3ff;
+    padding: 0.3rem;
+    text-align: center;
+    border-radius: 100px;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 1.3rem 2rem;
+}
+
+.bg-mainblue {
+    background-color: var(--mainblue_dark);
+}
+
+.bg-gradient-alt {
+    /* border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(90deg, #8f46d9 0%, #5753ff 100%) 1; */
+
+    position: relative;
+}
+.bg-gradient-alt::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 4px;
+    border-radius: 100px;
+    background: linear-gradient(to right, #00a3ff, #18e6fe);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+.bg-gradient-alt:hover {
+    opacity: 75%;
+    transition: 1s ease-in-out;
+}
+.text-gradient {
+    background: linear-gradient(91.33deg, #00a3ff 0%, #18e6fe 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.bg-gray {
+    background-color: var(--gray);
+}
+
+.bg-lightgray {
+    background-color: var(--lightgray);
+}
+
+.icon-bg {
+    background-color: var(--mainblue_dark);
+    border-radius: 7px;
+    padding: 0.6rem;
+}
+
+.bg-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.text-mainblue_dark {
+    color: var(--mainblue_dark);
+}
+
+.text-mainblue {
+    color: var(--mainblue);
+}
+
+.text-black {
+    color: var(--black);
+}
+
+/* Calendar */
+.days div {
+    font-size: 16px;
+    font-weight: 500;
+    width: calc(100% / 7);
+    height: 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.prev-date,
+.next-date {
+    opacity: 0.5;
+}
+
+.today {
+    background-color: var(--lightgray);
+    border-radius: 100px;
+}
+
+.input-error {
+    border: 2px solid #de3b25;
+}
+
+.input-file {
+}
+
+.input-file::-webkit-file-upload-button {
+    background: #22539f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 4px 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}

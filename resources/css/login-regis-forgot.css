@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#login-content {
+    background: radial-gradient(
+        146.09% 213.49% at -28.11% 142.51%,
+        #a0c1f2 0%,
+        #7dafea 29.44%,
+        #0444b3 63.83%,
+        #003796 76.2%,
+        #002668 94.88%
+    );
+}
+#login-content button,
+#forgot-content button,
+#register-content button#btn-next-1,
+#register-content button#btn-next-2,
+#register-content button#btn-next-3,
+#register-content button#btn-submit,
+button#return-login {
+    background-size: 200%;
+    background-image: linear-gradient(to left, #18e6fe, #00a3ff, #18e6fe);
+    transition: 0.5s;
+}
+#login-content :hover,
+#forgot-content :hover,
+#register-content button#btn-next-1:hover,
+#register-content button#btn-next-2:hover,
+#register-content button#btn-next-3:hover,
+#register-content button#btn-submit:hover,
+button#return-login:hover {
+    background-position: right;
+}
+
+#login-content input:-webkit-autofill,
+#login-content input:-webkit-autofill:hover,
+#login-content input:-webkit-autofill:focus {
+    box-shadow: 0 0 0 30px #e1e5e8 inset;
+}
+
+#register-content input:-webkit-autofill,
+#register-content input:-webkit-autofill:hover,
+#register-content input:-webkit-autofill:focus {
+    box-shadow: 0 0 0 30px #e1e5e8 inset;
+}
+
+#forgot-background {
+    background: radial-gradient(
+        255.47% 255.47% at 121.69% -94.25%,
+        #a0c1f2 0%,
+        #7dafea 15.81%,
+        #0444b3 57.07%,
+        #003796 74.9%,
+        #002668 90.45%
+    );
+}
+#register-background {
+    height: inherit;
+}
+#register-content {
+    background: radial-gradient(
+        146.09% 213.49% at -28.11% 142.51%,
+        #a0c1f2 0%,
+        #7dafea 29.44%,
+        #0444b3 63.83%,
+        #003796 76.2%,
+        #002668 94.88%
+    );
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(35%) sepia(61%) saturate(1460%) hue-rotate(193deg)
+        brightness(93%) contrast(86%);
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+select::-ms-expand {
+    display: none;
+}

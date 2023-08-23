@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+#background {
+    background: radial-gradient(
+        177.99% 177.99% at 50% 149.53%,
+        #a0c1f2 0%,
+        #7dafea 27.04%,
+        #0444b3 63.83%,
+        #003796 76.2%,
+        #002668 83.88%
+    );
+}
+#hero {
+    background: radial-gradient(
+        177.99% 177.99% at 50% 149.53%,
+        #a0c1f2 0%,
+        #7dafea 27.04%,
+        #0444b3 63.83%,
+        #003796 76.2%,
+        #002668 83.88%
+    );
+}
+#about {
+    background: linear-gradient(
+        360deg,
+        #a0c1f2 -20.52%,
+        #7dafea 12.6%,
+        #0444b3 68.1%,
+        #003796 85.28%,
+        #002668 95.95%
+    );
+}
+#video-company {
+    background: linear-gradient(360deg, #fbfbfb 0%, #89b6ed 100%);
+}
+#testimonial-faq-sposors {
+    background: linear-gradient(
+        180deg,
+        #fbfbfb 0%,
+        #e1ebf8 20%,
+        #85b3ec 50%,
+        #0444b3 100%
+    );
+}
+#testimonial {
+    /* background: linear-gradient(360deg, #e1ebf8 0%, #fbfbfb 100%); */
+    background-color: transparent;
+}
+#faq {
+    /* background: linear-gradient(0deg, #85b3ec 0%, #fbfbfb 127.42%); */
+    background-color: transparent;
+}
+#sponsors {
+    /* position: relative;
+    background: radial-gradient(
+        302.34% 302.34% at 50% 164.77%,
+        #a0c1f2 8.57%,
+        #7dafea 30.11%,
+        #0444b3 58.83%,
+        #003796 76.2%,
+        #002668 83.88%
+    ); */
+    background-color: transparent;
+}
+#footer {
+    background-color: #002668;
+}
+.blue-btn {
+    background-size: 200%;
+    background-image: linear-gradient(to left, #18e6fe, #00a3ff, #18e6fe);
+    transition: 0.5s;
+}
+.blue-btn:hover {
+    background-position: right;
+}
+.course-active {
+    background: linear-gradient(91.37deg, #00a3ff -2.71%, #18e6fe 103.03%);
+    pointer-events: none;
+}
+.course-active img {
+    filter: brightness(0) invert(100);
+}
